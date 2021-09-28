@@ -18,7 +18,6 @@ export class NovaTransferenciaComponent implements OnInit {
   }
 
   transferir() {
-    console.log('solicitado nova transferencia');
     const valorEmitir = {valor: this.valor, destino: this.destino};
     this.aoTransferir.emit(valorEmitir);
   }
